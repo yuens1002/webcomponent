@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Component</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --text-color: #333;
+      --primary-color: #ddd;
+      font-family: 'Roboto', serif;
+      font-size: 16px;
+    }
+    btn, btn2 {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      line-height: 1.5;
+      padding: 1rem 2rem;
+      transition: all .3s ease;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    btn:hover, btn2:hover {
+      filter: brightness(110%);
+    }
+    .red {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <btn role="button">
+    1
+  </btn>
+  <btn role="button">
+    2
+  </btn>
+  <btn role="button">
+    2
+  </btn>
+  <btn role="button">
+    2
+  </btn>
+  <btn2 role="button">
+    2
+  </btn2>
+  <btn2 role="button">
+    2
+  </btn2>
+<script src="./vanilla-js-component.js" charset="utf-8"></script>
+</body>
+</html>
